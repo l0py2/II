@@ -1,0 +1,9 @@
+[multiblock_model]
+	#Disable model cache
+	disableModelCache = false
+	#Use minimal quads for rendering
+	minimalQuads = false
+
+[flight_pylon]
+	#Disable beacon rendering regardless of pylon's state
+	disableBeacon = false
