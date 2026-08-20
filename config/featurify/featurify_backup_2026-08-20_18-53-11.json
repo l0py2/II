@@ -1,0 +1,26 @@
+{
+  "config_version": "2.0.4",
+  "config_datetime": "2026-08-19_21-30-21",
+  "global": {
+    "disable_all_placed_features": false
+  },
+  "placed_features": [
+    {
+      "name": "minecraft:desert_well",
+      "is_disabled": true
+    },
+    {
+      "name": "minecraft:monster_room",
+      "is_disabled": true
+    },
+    {
+      "name": "minecraft:monster_room_deep",
+      "is_disabled": true
+    },
+    {
+      "name": "terralith:cave/infested/dungeon_extra",
+      "is_disabled": true
+    }
+  ],
+  "biomes": []
+}

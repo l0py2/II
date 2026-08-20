@@ -1,6 +1,6 @@
 {
-  "config_version": "2.0.4",
-  "config_datetime": "2026-08-19_21-30-21",
+  "config_version": "2.0.5",
+  "config_datetime": "2026-08-20_18-53-11",
   "global": {
     "disable_all_placed_features": false
   },
@@ -18,7 +18,27 @@
       "is_disabled": true
     },
     {
-      "name": "terralith:cave/infested/dungeon_extra",
+      "name": "supplementaries:basalt_ash",
+      "is_disabled": true
+    },
+    {
+      "name": "supplementaries:cave_urns",
+      "is_disabled": true
+    },
+    {
+      "name": "supplementaries:ocean_barnacles",
+      "is_disabled": true
+    },
+    {
+      "name": "supplementaries:road_sign",
+      "is_disabled": true
+    },
+    {
+      "name": "supplementaries:shore_barnacles",
+      "is_disabled": true
+    },
+    {
+      "name": "supplementaries:wild_flax",
       "is_disabled": true
     }
   ],
