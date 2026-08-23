@@ -10,7 +10,7 @@ maxRowsStretch = 256
 searchBoxAutoSelected = false
 autocraftingNotification = true
 #Allowed Values: LIST, TREE
-autocraftingPreviewStyle = "TREE"
+autocraftingPreviewStyle = "LIST"
 
 [cable]
 	# Default: 0
@@ -20,7 +20,7 @@ autocraftingPreviewStyle = "TREE"
 [controller]
 	# Default: 1000
 	# Range: 1 ~ 9223372036854775807
-	energyCapacity = 1000000
+	energyCapacity = 1000
 
 [diskDrive]
 	# Default: 10
@@ -135,13 +135,13 @@ autocraftingPreviewStyle = "TREE"
 	regulatorUpgradeEnergyUsage = 16
 	# Default: 8
 	# Range: 0 ~ 9223372036854775807
-	rangeUpgradeEnergyUsage = 100
+	rangeUpgradeEnergyUsage = 8
 	# Default: 0
 	# Range: 0 ~ 9223372036854775807
-	creativeRangeUpgradeEnergyUsage = 1000
+	creativeRangeUpgradeEnergyUsage = 0
 	# Default: 8
 	# Range: > 0
-	rangeUpgradeRange = 1000
+	rangeUpgradeRange = 8
 	# Default: 8
 	# Range: 0 ~ 9223372036854775807
 	autocraftingUpgradeUsage = 8
@@ -188,10 +188,10 @@ autocraftingPreviewStyle = "TREE"
 [wirelessTransmitter]
 	# Default: 16
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 100
+	energyUsage = 16
 	# Default: 16
 	# Range: > 0
-	baseRange = 1000
+	baseRange = 16
 
 [storageMonitor]
 	# Default: 4
