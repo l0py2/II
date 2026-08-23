@@ -103,5 +103,57 @@
 			x: 0.0d
 			y: 3.0d
 		}
+		{
+			can_repeat: true
+			dependencies: ["428A251BE1A2C51C"]
+			icon: {
+				id: "guideme:guide"
+			}
+			id: "594FE883B8FCA664"
+			rewards: [
+				{
+					id: "59219EDEE2E59504"
+					item: {
+						components: {
+							"guideme:guide_id": "modern_industrialization:book"
+							"minecraft:custom_name": "\"Modern Industralization\""
+						}
+						count: 1
+						id: "guideme:guide"
+					}
+					type: "item"
+				}
+				{
+					id: "0A00967B20D15806"
+					item: {
+						components: {
+							"guideme:guide_id": "extended_industrialization:guide"
+							"minecraft:custom_name": "\"Extended Industralization\""
+						}
+						count: 1
+						id: "guideme:guide"
+					}
+					type: "item"
+				}
+				{
+					id: "2FF345A298610578"
+					item: {
+						components: {
+							"guideme:guide_id": "yet_another_industrialization:guide"
+							"minecraft:custom_name": "\"Yet Another Industralization\""
+						}
+						count: 1
+						id: "guideme:guide"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6EF8EFD10D9DD31B"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
 	]
 }
