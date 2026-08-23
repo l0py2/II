@@ -7,5 +7,26 @@
 	images: [ ]
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "5D9C98EA9AF2CFFD"
+		tasks: [
+			{
+				id: "30F79AB08495FC43"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:logs)", "minecraft:custom_name": "\"Logs\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}
+			{
+				id: "7B07EF263B46E2C8"
+				item: { count: 1, id: "minecraft:crafting_table" }
+				type: "item"
+			}
+			{
+				id: "71CF7D8E746B8604"
+				item: { count: 1, id: "minecraft:wooden_pickaxe" }
+				type: "item"
+			}
+		]
+		x: 0.0d
+		y: 0.0d
+	}]
 }
