@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stone_age"
+	group: ""
+	icon: {
+		id: "modern_industrialization:bronze_boiler"
+	}
+	id: "659C97718C5058CC"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "540B4484F31CE976"
+		tasks: [{
+			id: "0F34047B5FDE88DB"
+			item: { count: 1, id: "modern_industrialization:bronze_ingot" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}
