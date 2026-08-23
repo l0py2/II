@@ -1,0 +1,46 @@
+{
+	"pack": {
+		"pack_format": 48,
+		"description": "Removes all loot excluding blocks and fishing"
+	},
+	"filter": {
+		"block": [
+			{
+				"namespace": ".*",
+				"path": "loot_table/archaeology/.*"
+			},
+			{
+				"namespace": ".*",
+				"path": "loot_table/chests/.*"
+			},
+			{
+				"namespace": ".*",
+				"path": "loot_table/dispensers/.*"
+			},
+			{
+				"namespace": ".*",
+				"path": "loot_table/entities/.*"
+			},
+			{
+				"namespace": ".*",
+				"path": "loot_table/equipment/.*"
+			},
+			{
+				"namespace": ".*",
+				"path": "loot_table/gameplay/(?!fishing).*"
+			},
+			{
+				"namespace": ".*",
+				"path": "loot_table/pots/.*"
+			},
+			{
+				"namespace": ".*",
+				"path": "loot_table/shearing/.*"
+			},
+			{
+				"namespace": ".*",
+				"path": "loot_table/spawners/.*"
+			}
+		]
+	}
+}
