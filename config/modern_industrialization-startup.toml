@@ -14,9 +14,9 @@ defaultIndustrialistTrades = true
 [compat]
 	#Enable bidirectional energy compatibility with NeoForge's energy system.
 	#We recommend leaving this to false unless the other mods have been balanced accordingly.
-	bidirectionalEnergyCompat = false
+	bidirectionalEnergyCompat = true
 	#Enable the Applied Energistics 2 integration, if present.
-	ae2Integration = true
+	ae2Integration = false
 	#Enable the FTB Quests integration, if present.
 	ftbQuestsIntegration = false
 	#Enable the Almost Unified integration, if present.

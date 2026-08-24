@@ -48,5 +48,61 @@
 			x: 1.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["5504BD92098B96DE"]
+			id: "6A369AD729B7DEE3"
+			tasks: [
+				{
+					id: "5F4BD60C20A0C0F0"
+					item: { count: 1, id: "minecraft:raw_copper" }
+					type: "item"
+				}
+				{
+					id: "7F89B6272CDF0CDE"
+					item: { count: 1, id: "modern_industrialization:raw_tin" }
+					type: "item"
+				}
+				{
+					id: "0B15E33583E4D0A6"
+					item: { count: 1, id: "minecraft:raw_iron" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A369AD729B7DEE3"]
+			id: "2EEF891DBC6A322D"
+			tasks: [{
+				id: "751E8DF909F759FF"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(modern_industrialization:forge_hammer_tools)", "minecraft:custom_name": "\"Hammer\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EEF891DBC6A322D"]
+			id: "4823CB579E681C1B"
+			tasks: [{
+				id: "2252EE1F72BFAAB7"
+				item: { count: 1, id: "modern_industrialization:forge_hammer" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4823CB579E681C1B"]
+			id: "1200B4D0772C4E60"
+			tasks: [{
+				id: "33611DBF8B97C4FF"
+				item: { count: 1, id: "modern_industrialization:bronze_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
 	]
 }
