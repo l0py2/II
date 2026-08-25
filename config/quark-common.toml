@@ -36,7 +36,7 @@
 	automation = false
 	building = false
 	management = true
-	tools = false
+	tools = true
 	tweaks = true
 	world = false
 	mobs = false
@@ -45,17 +45,17 @@
 	oddities = true
 
 [automation]
-	"Chains Connect Blocks" = true
-	Chute = true
-	"Dispensers Place Blocks" = true
-	"Ender Watcher" = true
-	"Feeding Trough" = true
-	Gravisand = true
-	"Iron Rod" = true
-	"Metal Buttons" = true
-	"Obsidian Plate" = true
-	"Pistons Move Tile Entities" = true
-	"Redstone Randomizer" = true
+	"Chains Connect Blocks" = false
+	Chute = false
+	"Dispensers Place Blocks" = false
+	"Ender Watcher" = false
+	"Feeding Trough" = false
+	Gravisand = false
+	"Iron Rod" = false
+	"Metal Buttons" = false
+	"Obsidian Plate" = false
+	"Pistons Move Tile Entities" = false
+	"Redstone Randomizer" = false
 
 	[automation.dispensers_place_blocks]
 		Blacklist = ["minecraft:water", "minecraft:lava", "minecraft:fire"]
@@ -94,40 +94,40 @@
 		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
 
 [building]
-	"Celebratory Lamps" = true
-	"Compressed Blocks" = true
-	"Duskbound Blocks" = true
-	"Framed Glass" = true
-	"Glass Item Frame" = true
-	"Gold Bars" = true
-	Grate = true
-	Hedges = true
-	"Hollow Logs" = true
-	"Industrial Palette" = true
-	"Japanese Palette" = true
-	"Leaf Carpet" = true
-	Midori = true
-	"More Brick Types" = true
-	"More Mud Blocks" = true
-	"More Potted Plants" = true
-	"Nether Brick Fence Gate" = true
-	"Rainbow Lamps" = true
-	"Raw Metal Bricks" = true
-	Rope = true
-	"Shear Vines" = true
-	Shingles = true
-	"Soul Sandstone" = true
-	Stools = true
-	"Sturdy Stone" = true
-	Thatch = true
-	"Variant Bookshelves" = true
-	"Variant Chests" = true
-	"Variant Furnaces" = true
-	"Variant Ladders" = true
-	"Vertical Planks" = true
-	"Vertical Slabs" = true
-	"Wooden Posts" = true
-	"More Stone Variants" = true
+	"Celebratory Lamps" = false
+	"Compressed Blocks" = false
+	"Duskbound Blocks" = false
+	"Framed Glass" = false
+	"Glass Item Frame" = false
+	"Gold Bars" = false
+	Grate = false
+	Hedges = false
+	"Hollow Logs" = false
+	"Industrial Palette" = false
+	"Japanese Palette" = false
+	"Leaf Carpet" = false
+	Midori = false
+	"More Brick Types" = false
+	"More Mud Blocks" = false
+	"More Potted Plants" = false
+	"Nether Brick Fence Gate" = false
+	"Rainbow Lamps" = false
+	"Raw Metal Bricks" = false
+	Rope = false
+	"Shear Vines" = false
+	Shingles = false
+	"Soul Sandstone" = false
+	Stools = false
+	"Sturdy Stone" = false
+	Thatch = false
+	"Variant Bookshelves" = false
+	"Variant Chests" = false
+	"Variant Furnaces" = false
+	"Variant Ladders" = false
+	"Vertical Planks" = false
+	"Vertical Slabs" = false
+	"Wooden Posts" = false
+	"More Stone Variants" = false
 
 	[building.celebratory_lamps]
 		"Light Level" = 15
@@ -328,20 +328,20 @@
 
 [tools]
 	Abacus = true
-	"Ambient Discs" = true
-	"Ancient Tomes" = true
-	"Beacon Redirection" = true
-	"Bottled Cloud" = true
-	"Color Runes" = true
-	"Endermosh Music Disc" = true
-	"Parrot Eggs" = true
-	"Pathfinder Maps" = true
-	Pickarang = true
-	"Seed Pouch" = true
-	"Skull Pikes" = true
-	"Slime In A Bucket" = true
-	"Torch Arrow" = true
-	Trowel = true
+	"Ambient Discs" = false
+	"Ancient Tomes" = false
+	"Beacon Redirection" = false
+	"Bottled Cloud" = false
+	"Color Runes" = false
+	"Endermosh Music Disc" = false
+	"Parrot Eggs" = false
+	"Pathfinder Maps" = false
+	Pickarang = false
+	"Seed Pouch" = false
+	"Skull Pikes" = false
+	"Slime In A Bucket" = false
+	"Torch Arrow" = false
+	Trowel = false
 
 		[tools.abacus.highlight_color]
 			A = 0.4
@@ -511,7 +511,7 @@
 	"Dyeable Item Frames" = true
 	Emotes = true
 	"Enhanced Ladders" = true
-	"Glass Shard" = true
+	"Glass Shard" = false
 	"Gold Tools Have Fortune" = true
 	"Grab Chickens" = true
 	"Hoe Harvesting" = true
@@ -762,23 +762,23 @@
 
 [world]
 	#(Ashen Trees)
-	"Ancient Wood" = true
-	"Azalea Wood" = true
-	"Big Stone Clusters" = true
+	"Ancient Wood" = false
+	"Azalea Wood" = false
+	"Big Stone Clusters" = false
 	#(Trumpet Trees)
-	"Blossom Trees" = true
-	"Cherry Grove Water Petals" = true
-	"Chorus Vegetation" = true
-	Corundum = true
-	"Fairy Rings" = true
-	"Fallen Logs" = true
-	"Glimmering Weald" = true
-	"Monster Box" = true
-	"Nether Obsidian Spikes" = true
-	"New Stone Types" = true
-	"No More Lava Pockets" = true
-	Permafrost = true
-	"Spiral Spires" = true
+	"Blossom Trees" = false
+	"Cherry Grove Water Petals" = false
+	"Chorus Vegetation" = false
+	Corundum = false
+	"Fairy Rings" = false
+	"Fallen Logs" = false
+	"Glimmering Weald" = false
+	"Monster Box" = false
+	"Nether Obsidian Spikes" = false
+	"New Stone Types" = false
+	"No More Lava Pockets" = false
+	Permafrost = false
+	"Spiral Spires" = false
 
 	#(Ashen Trees)
 	[world.ancient_wood]
@@ -1345,13 +1345,13 @@
 				"Is Blacklist" = false
 
 [mobs]
-	Crabs = true
-	Forgotten = true
-	Foxhound = true
-	Shiba = true
-	Stonelings = true
-	Toretoise = true
-	Wraith = true
+	Crabs = false
+	Forgotten = false
+	Foxhound = false
+	Shiba = false
+	Stonelings = false
+	Toretoise = false
+	Wraith = false
 
 	[mobs.crabs]
 		"Enable Brewing" = true
