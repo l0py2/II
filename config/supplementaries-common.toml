@@ -470,8 +470,8 @@
 		simple_mode = true
 
 	[building.netherite_doors]
-		door = true
-		trapdoor = true
+		door = false
+		trapdoor = false
 		#Makes netherite doors and trapdoors unbreakable
 		unbreakable = false
 
