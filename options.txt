@@ -263,7 +263,7 @@ key_quark.keybind.sort_container:key.keyboard.unknown
 key_quark.keybind.lock_rotation:key.keyboard.unknown
 key_quark.keybind.narrator_readout:key.keyboard.unknown
 key_quark.keybind.narrator_full_readout:key.keyboard.unknown
-key_quark.keybind.variant_selector:key.keyboard.r
+key_quark.keybind.variant_selector:key.keyboard.unknown
 key_key.ftbultimine:key.keyboard.grave.accent
 key_ftbultimine.change_shape.next:key.keyboard.unknown
 key_ftbultimine.change_shape.prev:key.keyboard.unknown
@@ -313,10 +313,10 @@ key_key.tankstorage.toggleinsertmode:key.keyboard.unknown
 key_key.tankstorage.lockslot:key.keyboard.left.alt
 key_key.tankstorage.opentankfromkeybind:key.keyboard.unknown
 key_key.extended_industrialization.toggle_main_hand_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_boots_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_chestplate_ability:key.keyboard.unknown
 key_key.extended_industrialization.toggle_helmet_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_chestplate_ability:key.keyboard.unknown
 key_key.extended_industrialization.toggle_leggings_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_boots_ability:key.keyboard.unknown
 key_key.yet_another_industrialization.toggle_industrialists_goggles:key.keyboard.unknown
 key_gui.xaero_pac_key_open_menu:key.keyboard.unknown
 soundCategory_master:0.25496688741721857
