@@ -1,118 +1,3 @@
-[redstone]
-	wind_vane = false
-	clock_block = false
-	redstone_illuminator = false
-	crank = false
-	cog_block = true
-	gold_door = false
-	gold_trapdoor = false
-	lock_block = false
-	relayer = true
-
-	[redstone.speaker_block]
-		enabled = false
-		#Enable/disable speaker block narrator mode
-		narrator_enabled = true
-		#Max text
-		# Default: 32
-		# Range: 0 ~ 10000
-		max_text = 32
-		#Maximum block range
-		# Default: 64
-		# Range: 0 ~ 100000000
-		range = 64
-
-	[redstone.bellows]
-		enabled = false
-		#bellows pushes air following this equation: 
-		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling 
-		#represents base period at 1 power
-		# Default: 78
-		# Range: 1 ~ 512
-		base_period = 78
-		#entities with velocity greater than this won't be pushed
-		# Default: 2.0
-		# Range: 0.0 ~ 16.0
-		power_scaling = 2.0
-		#velocity increase uses this equation: 
-		#vel = base_vel*((range-entity_distance)/range) with base_vel = base_velocity_scaling/period 
-		#note that the block will push further the faster it's pulsing
-		# Default: 5.0
-		# Range: 0.0 ~ 64.0
-		base_velocity_scaling = 5.0
-		#note that it will still only keep alive the two fire blocks closer to it
-		# Default: 5
-		# Range: 0 ~ 16
-		range = 5
-
-	[redstone.spring_launcher]
-		enabled = false
-		#spring launcher launch speed
-		# Default: 1.5
-		# Range: 0.0 ~ 16.0
-		velocity = 1.5
-		#fall distance needed to trigger the automatic spring launch
-		# Default: 5
-		# Range: 0 ~ 512
-		fall_height_required = 5
-
-	[redstone.enderman_head]
-		enabled = false
-		drop_head = true
-		#Time to increase 1 power level when being looked at
-		# Default: 15
-		# Range: 0 ~ 10000
-		ticks_to_increase_power = 15
-		#do enderman heads work when looked from any side?
-		work_from_any_side = false
-
-	[redstone.turn_table]
-		enabled = false
-		#can rotate entities standing on it?
-		rotate_entities = true
-		#Allows turn table to shuffle containers content when rotated over horizontal axis
-		shuffle_containers = true
-
-	[redstone.pulley_block]
-		#Pulleys are automatically disabled if 'rope' feature is disabled
-		enabled = false
-		#If true, pulleys retract their rope chain over multiple ticks, animating each block via vanilla moving-piston entities. 
-		#Connected blocks become moving blocks (so they push entities, drop sand etc) and multiple pulleys can cooperate to pull a single heavy contraption, useful for elevators. 
-		#If false, the original instant retraction behavior is used.
-		continuous_retraction = true
-		#If true, multiple pulleys firing on the same tick with the same period and push direction can pool their pull budget into one structure resolve, letting two ropes share a wide elevator platform. Only relevant when 'continuous_retraction' is enabled.
-		cooperative_pulleys = true
-		#Maximum number of NON-rope blocks a single pulley can drag (the anchor and anything sticky-attached to it). Rope segments don't count toward this. Cooperating pulleys pool their budgets: two pulleys can pull twice this many blocks together.
-		# Default: 8
-		# Range: 1 ~ 128
-		pull_limit = 8
-		#Ticks to wait between unit pulls when continuous_retraction is enabled. 
-		#Lower = faster pulley. Minimum 2 ticks because each animation takes that long to play out, going lower has no effect.
-		# Default: 4
-		# Range: 2 ~ 100
-		pull_interval = 4
-		#Chance for a new mineshaft elevator piece to spawn
-		# Default: 0.035
-		# Range: 0.0 ~ 1.0
-		mineshaft_elevator = 0.035
-
-	[redstone.dispenser_minecart]
-		enabled = false
-		#Makes projectiles shot from dispenser minecart retain the minecart velocity and be shot at an angle when the minecart is on a rail slope
-		adjust_projectile_angle = true
-
-	[redstone.faucet]
-		enabled = false
-		#Turn off to prevent faucets from dropping items
-		spill_items = true
-		#Allows faucets to fill entities inventories
-		fill_entities_below = false
-
-	[redstone.crystal_display]
-		enabled = false
-		#Allows chaining 2 crystal displays, letting one power the other to its left IF its own power exceeds 10. Given power will be its own divided by 10. Note that to work the decimal display must NOT have power directly behind it. Doing so will override the behavior to non chaining mode
-		chaining = true
-
 [functional]
 	fodder = false
 	hourglass = false
@@ -178,7 +63,7 @@
 		simple_safes = false
 
 	[functional.sack]
-		enabled = false
+		enabled = true
 		#Penalize the player with slowness effect when carrying too many sacks
 		sack_penalty = true
 		#Maximum number of sacks after which the overencumbered effect will be applied. Each multiple of this number will increase the effect strength by one
@@ -260,7 +145,16 @@
 
 		[functional.cannon.plunderer]
 			enabled = true
+			#Galleons are automatically disabled if 'rope' feature is disabled
 			galleon = true
+			#Chance for a raid wave to spawn in open water near the village instead of on land. Such waves arrive on boats steered by plunderers, which take the place of some of the wave pillagers. The rest swim along and hop on when a seat is free. Set to 0 to disable
+			# Default: 0.75
+			# Range: 0.0 ~ 1.0
+			naval_raid_chance = 0.75
+			#Chance for a naval wave pillager to be replaced by a plunderer. 1 replaces them all
+			# Default: 0.5
+			# Range: 0.0 ~ 1.0
+			naval_raid_plunderer_chance = 0.5
 
 	[functional.present]
 		enabled = false
@@ -288,196 +182,6 @@
 			# Default: 200
 			# Range: 0 ~ 10000
 			glowing_duration = 200
-
-[building]
-	lapis_bricks = false
-	deepslate_lamp = false
-	end_stone_lamp = false
-	blackstone_lamp = false
-	stone_lamp = false
-	stone_tile = false
-	blackstone_tile = false
-	#Buntings are automatically disabled if 'rope' feature is disabled
-	bunting = false
-	pancake = false
-	checker_block = false
-	raked_gravel = false
-	feather_block = false
-	statue = false
-	doormat = false
-	flint_block = false
-	fine_wood = false
-	candle_holder = false
-	fire_pit = false
-	wicker_fence = false
-
-	[building.spider_head]
-		enabled = false
-
-	[building.barnacles]
-		enabled = false
-
-	[building.blackboard]
-		enabled = false
-		#Enable to draw directly on a blackboard using any dye. Gui still only works in black and white
-		colored_blackboard = false
-		#Interaction mode for blackboards
-		#Allowed Values: BOTH, GUI, MANUAL
-		interaction_mode = "BOTH"
-
-	[building.gravel_bricks]
-		enabled = false
-		#Allows gravel bricks to break when fallen upon or when an entity walks on them with enough falling speed
-		allow_breaking = true
-
-	[building.slidy_block]
-		enabled = false
-		#Slidy block speed
-		# Default: 0.125
-		# Range: 0.0 ~ 1.0
-		speed = 0.125
-
-	[building.timber_frame]
-		enabled = false
-		#Allow placing a timber frame directly on a block by holding shift
-		swap_on_shift = false
-		#Allows axes to remove a framed block leaving the contained block intact
-		axes_strip = true
-		#Replace a timber frame with wattle and daub block when daub is placed in it
-		replace_daub = true
-
-	[building.iron_gate]
-		enabled = false
-		#Allows two iron gates to be opened simultaneously when on top of the other
-		double_opening = true
-		#Makes iron (ang gold) gates behave like their door counterpart so for example iron gates will only be openable by redstone
-		door-like_gates = false
-
-	[building.gold_bars]
-		enabled = false
-
-	[building.item_shelf]
-		enabled = false
-		#Makes item shelves climbable
-		climbable_shelves = false
-
-	[building.sugar_cube]
-		enabled = false
-		#Duration in seconts of speed effect garanted to horses that eat a sugar cube
-		# Default: 10
-		# Range: 0 ~ 1000
-		horse_speed_duration = 10
-
-	[building.planter]
-		enabled = false
-		#Makes so saplings that grow in a planter will break it turning into rooted dirt
-		broken_by_sapling = false
-		#When Farmers Delight is on planter will also act like rich soil and use it in its recipe
-		rich_soil_planter = true
-
-	[building.notice_board]
-		enabled = false
-		#Allows notice boards to accept and display any item, not just maps and books
-		allow_any_item = false
-		#Enables a GUI for the block. Not needed as the block just holds one item which you can place by clicking on it
-		gui = true
-
-	[building.pedestal]
-		enabled = false
-		#If enabled end crystals placed on a pedestals will provide an enchantment power bonus equivalent to 3 bookshelves
-		# Default: 3.0
-		# Range: 0.0 ~ 100.0
-		crystal_enchanting = 3.0
-
-	[building.ash]
-		enabled = false
-		#Burnable blocks will have a chance to create ash layers when burned. Greater this number the greater the chance will be
-		# Default: 1.0
-		# Range: 0.0 ~ 1.0
-		ash_from_fire_chance = 1.0
-		#Burning mobs will drop ash when they die
-		ash_from_burning_mobs = true
-		#Allows rain to wash away ash layers overtime
-		rain_wash_ash = true
-		#Use a datapack to tweak rarity
-		basalt_ash = true
-
-	[building.flag]
-		enabled = false
-		#Allows right/left clicking on a stick to lower/raise a flag attached to it
-		stick_pole = true
-		#Maximum allowed pole length
-		# Default: 16
-		# Range: 0 ~ 256
-		pole_length = 16
-
-	[building.goblet]
-		enabled = false
-		#Allows drinking from goblets
-		allow_drinking = true
-
-	[building.globe]
-		enabled = false
-		#Displays current coordinates when using a globe
-		show_coordinates = true
-		sepia_globe = true
-
-	[building.way_sign]
-		enabled = false
-
-		[building.way_sign.road_signs]
-			#Entirely disables them from spawning
-			enabled = true
-			#With this option road signs will display the distance to the structure that they are pointing to
-			show_distance_text = true
-			#Maximum distance in chunks that road signs will search for structures
-			# Default: 200
-			# Range: 0 ~ 1000
-			max_search_radius = 200
-			#Speeds up way sign feature searching by making the search stop at the first found structure. This means that way signs won't point to the nearest structure anymore
-			exit_search_early = true
-			#Maximum number of structure types from the tag that road signs will attempt to look for every time. Decreasing might speed up search at the cost of making them not point to the nearest structure out of all. Also if made too low and in cases it were to pick a structure that only spawns very rarely, this would actually slow down the search instead of speeding it up
-			# Default: 12
-			# Range: 1 ~ 100
-			max_structures_searches = 12
-
-	[building.daub]
-		enabled = false
-		wattle_and_daub = true
-
-	[building.ash_bricks]
-		enabled = false
-
-	[building.hat_stand]
-		enabled = false
-		#Allow all items to go on hat stand
-		unrestricted = false
-
-	[building.awning]
-		enabled = false
-		#Allows having slanted awnings. Disabled if you feel its cursed.
-		slant = true
-		#Allows entities to fall through awnings, when shifting.
-		shift_through = true
-		#Bouncing angle of slanted awnings
-		# Default: 69.44395478041653
-		# Range: 0.0 ~ 90.0
-		angle = 69.44395478041653
-
-	[building.flower_box]
-		enabled = false
-		#Makes so flower boxes can only contain one tall flower item per block
-		simple_mode = true
-
-	[building.netherite_doors]
-		door = false
-		trapdoor = false
-		#Makes netherite doors and trapdoors unbreakable
-		unbreakable = false
-
-	[building.sconce]
-		enabled = false
-		sconce_lever = true
 
 [tools]
 	candy = false
@@ -640,6 +344,312 @@
 
 	[tools.antique_ink]
 		enabled = false
+
+[redstone]
+	wind_vane = false
+	clock_block = false
+	redstone_illuminator = false
+	crank = false
+	cog_block = true
+	gold_door = false
+	gold_trapdoor = false
+	lock_block = false
+	relayer = true
+
+	[redstone.speaker_block]
+		enabled = true
+		#Enable/disable speaker block narrator mode
+		narrator_enabled = true
+		#Max text
+		# Default: 32
+		# Range: 0 ~ 10000
+		max_text = 32
+		#Maximum block range
+		# Default: 64
+		# Range: 0 ~ 100000000
+		range = 64
+
+	[redstone.bellows]
+		enabled = false
+		#bellows pushes air following this equation: 
+		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling 
+		#represents base period at 1 power
+		# Default: 78
+		# Range: 1 ~ 512
+		base_period = 78
+		#entities with velocity greater than this won't be pushed
+		# Default: 2.0
+		# Range: 0.0 ~ 16.0
+		power_scaling = 2.0
+		#velocity increase uses this equation: 
+		#vel = base_vel*((range-entity_distance)/range) with base_vel = base_velocity_scaling/period 
+		#note that the block will push further the faster it's pulsing
+		# Default: 5.0
+		# Range: 0.0 ~ 64.0
+		base_velocity_scaling = 5.0
+		#note that it will still only keep alive the two fire blocks closer to it
+		# Default: 5
+		# Range: 0 ~ 16
+		range = 5
+
+	[redstone.spring_launcher]
+		enabled = false
+		#spring launcher launch speed
+		# Default: 1.5
+		# Range: 0.0 ~ 16.0
+		velocity = 1.5
+		#fall distance needed to trigger the automatic spring launch
+		# Default: 5
+		# Range: 0 ~ 512
+		fall_height_required = 5
+
+	[redstone.enderman_head]
+		enabled = false
+		drop_head = true
+		#Time to increase 1 power level when being looked at
+		# Default: 15
+		# Range: 0 ~ 10000
+		ticks_to_increase_power = 15
+		#do enderman heads work when looked from any side?
+		work_from_any_side = false
+
+	[redstone.turn_table]
+		enabled = false
+		#can rotate entities standing on it?
+		rotate_entities = true
+		#Allows turn table to shuffle containers content when rotated over horizontal axis
+		shuffle_containers = true
+
+	[redstone.pulley_block]
+		#Pulleys are automatically disabled if 'rope' feature is disabled
+		enabled = false
+		#If true, pulleys retract their rope chain over multiple ticks, animating each block via vanilla moving-piston entities. 
+		#Connected blocks become moving blocks (so they push entities, drop sand etc) and multiple pulleys can cooperate to pull a single heavy contraption, useful for elevators. 
+		#If false, the original instant retraction behavior is used.
+		continuous_retraction = true
+		#If true, multiple pulleys firing on the same tick with the same period and push direction can pool their pull budget into one structure resolve, letting two ropes share a wide elevator platform. Only relevant when 'continuous_retraction' is enabled.
+		cooperative_pulleys = true
+		#Maximum number of NON-rope blocks a single pulley can drag (the anchor and anything sticky-attached to it). Rope segments don't count toward this. Cooperating pulleys pool their budgets: two pulleys can pull twice this many blocks together.
+		# Default: 8
+		# Range: 1 ~ 128
+		pull_limit = 8
+		#Ticks to wait between unit pulls when continuous_retraction is enabled. 
+		#Lower = faster pulley. Minimum 2 ticks because each animation takes that long to play out, going lower has no effect.
+		# Default: 4
+		# Range: 2 ~ 100
+		pull_interval = 4
+		#Chance for a new mineshaft elevator piece to spawn
+		# Default: 0.035
+		# Range: 0.0 ~ 1.0
+		mineshaft_elevator = 0.035
+
+	[redstone.dispenser_minecart]
+		enabled = false
+		#Makes projectiles shot from dispenser minecart retain the minecart velocity and be shot at an angle when the minecart is on a rail slope
+		adjust_projectile_angle = true
+
+	[redstone.faucet]
+		enabled = false
+		#Turn off to prevent faucets from dropping items
+		spill_items = true
+		#Allows faucets to fill entities inventories
+		fill_entities_below = false
+
+	[redstone.crystal_display]
+		enabled = true
+		#Allows chaining 2 crystal displays, letting one power the other to its left IF its own power exceeds 10. Given power will be its own divided by 10. Note that to work the decimal display must NOT have power directly behind it. Doing so will override the behavior to non chaining mode
+		chaining = true
+
+[building]
+	lapis_bricks = false
+	deepslate_lamp = false
+	end_stone_lamp = false
+	blackstone_lamp = false
+	stone_lamp = false
+	stone_tile = false
+	blackstone_tile = false
+	#Buntings are automatically disabled if 'rope' feature is disabled
+	bunting = false
+	pancake = false
+	checker_block = false
+	raked_gravel = false
+	feather_block = false
+	statue = false
+	doormat = false
+	flint_block = false
+	fine_wood = false
+	candle_holder = false
+	fire_pit = false
+	wicker_fence = false
+
+	[building.spider_head]
+		enabled = false
+
+	[building.barnacles]
+		enabled = false
+
+	[building.blackboard]
+		enabled = true
+		#Enable to draw directly on a blackboard using any dye. Gui still only works in black and white
+		colored_blackboard = false
+		#Interaction mode for blackboards
+		#Allowed Values: BOTH, GUI, MANUAL
+		interaction_mode = "BOTH"
+
+	[building.gravel_bricks]
+		enabled = false
+		#Allows gravel bricks to break when fallen upon or when an entity walks on them with enough falling speed
+		allow_breaking = true
+
+	[building.slidy_block]
+		enabled = false
+		#Slidy block speed
+		# Default: 0.125
+		# Range: 0.0 ~ 1.0
+		speed = 0.125
+
+	[building.timber_frame]
+		enabled = false
+		#Allow placing a timber frame directly on a block by holding shift
+		swap_on_shift = false
+		#Allows axes to remove a framed block leaving the contained block intact
+		axes_strip = true
+		#Replace a timber frame with wattle and daub block when daub is placed in it
+		replace_daub = true
+
+	[building.iron_gate]
+		enabled = false
+		#Allows two iron gates to be opened simultaneously when on top of the other
+		double_opening = true
+		#Makes iron (ang gold) gates behave like their door counterpart so for example iron gates will only be openable by redstone
+		door-like_gates = false
+
+	[building.gold_bars]
+		enabled = false
+
+	[building.item_shelf]
+		enabled = false
+		#Makes item shelves climbable
+		climbable_shelves = false
+
+	[building.sugar_cube]
+		enabled = false
+		#Duration in seconts of speed effect garanted to horses that eat a sugar cube
+		# Default: 10
+		# Range: 0 ~ 1000
+		horse_speed_duration = 10
+
+	[building.planter]
+		enabled = false
+		#Makes so saplings that grow in a planter will break it turning into rooted dirt
+		broken_by_sapling = false
+		#When Farmers Delight is on planter will also act like rich soil and use it in its recipe
+		rich_soil_planter = true
+
+	[building.notice_board]
+		enabled = false
+		#Allows notice boards to accept and display any item, not just maps and books
+		allow_any_item = false
+		#Enables a GUI for the block. Not needed as the block just holds one item which you can place by clicking on it
+		gui = true
+
+	[building.pedestal]
+		enabled = false
+		#If enabled end crystals placed on a pedestals will provide an enchantment power bonus equivalent to 3 bookshelves
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		crystal_enchanting = 3.0
+
+	[building.ash]
+		enabled = false
+		#Burnable blocks will have a chance to create ash layers when burned. Greater this number the greater the chance will be
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		ash_from_fire_chance = 1.0
+		#Burning mobs will drop ash when they die
+		ash_from_burning_mobs = true
+		#Allows rain to wash away ash layers overtime
+		rain_wash_ash = true
+		#Use a datapack to tweak rarity
+		basalt_ash = true
+
+	[building.flag]
+		enabled = false
+		#Allows right/left clicking on a stick to lower/raise a flag attached to it
+		stick_pole = true
+		#Maximum allowed pole length
+		# Default: 16
+		# Range: 0 ~ 256
+		pole_length = 16
+
+	[building.goblet]
+		enabled = false
+		#Allows drinking from goblets
+		allow_drinking = true
+
+	[building.globe]
+		enabled = false
+		#Displays current coordinates when using a globe
+		show_coordinates = true
+		#Sepia globes are automatically disabled if 'antique_ink' feature is disabled
+		sepia_globe = true
+
+	[building.way_sign]
+		enabled = false
+
+		[building.way_sign.road_signs]
+			#Entirely disables them from spawning
+			enabled = true
+			#With this option road signs will display the distance to the structure that they are pointing to
+			show_distance_text = true
+			#Maximum distance in chunks that road signs will search for structures
+			# Default: 200
+			# Range: 0 ~ 1000
+			max_search_radius = 200
+			#Speeds up way sign feature searching by making the search stop at the first found structure. This means that way signs won't point to the nearest structure anymore
+			exit_search_early = true
+			#Maximum number of structure types from the tag that road signs will attempt to look for every time. Decreasing might speed up search at the cost of making them not point to the nearest structure out of all. Also if made too low and in cases it were to pick a structure that only spawns very rarely, this would actually slow down the search instead of speeding it up
+			# Default: 12
+			# Range: 1 ~ 100
+			max_structures_searches = 12
+
+	[building.daub]
+		enabled = false
+		wattle_and_daub = true
+
+	[building.ash_bricks]
+		enabled = false
+
+	[building.hat_stand]
+		enabled = false
+		#Allow all items to go on hat stand
+		unrestricted = false
+
+	[building.awning]
+		enabled = false
+		#Allows having slanted awnings. Disabled if you feel its cursed.
+		slant = true
+		#Allows entities to fall through awnings, when shifting.
+		shift_through = true
+		#Bouncing angle of slanted awnings
+		# Default: 69.44395478041653
+		# Range: 0.0 ~ 90.0
+		angle = 69.44395478041653
+
+	[building.flower_box]
+		enabled = false
+		#Makes so flower boxes can only contain one tall flower item per block
+		simple_mode = true
+
+	[building.netherite_doors]
+		door = false
+		trapdoor = false
+		#Makes netherite doors and trapdoors unbreakable
+		unbreakable = false
+
+	[building.sconce]
+		enabled = false
+		sconce_lever = true
 
 [general]
 	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER

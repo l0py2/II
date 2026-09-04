@@ -1,11 +1,8 @@
 {
-  "config_version": "2.0.33",
-  "config_datetime": "2026-08-19_21-30-30",
+  "config_version": "2.0.35",
+  "config_datetime": "2026-09-04_18-11-07",
   "general": {
-    "disable_all_structures": true,
-    "prevent_structure_overlap": false,
-    "enable_global_spacing_and_separation_modifier": false,
-    "global_spacing_and_separation_modifier": 1.0
+    "disable_all_structures": true
   },
   "structure_namespaces": [],
   "structures": [
@@ -146,123 +143,43 @@
       "is_disabled": true
     },
     {
+      "name": "ad_astra:lunar_tower",
+      "is_disabled": true
+    },
+    {
+      "name": "ad_astra:lunarian_village",
+      "is_disabled": true
+    },
+    {
+      "name": "ad_astra:mars_temple",
+      "is_disabled": true
+    },
+    {
+      "name": "ad_astra:moon_dungeon",
+      "is_disabled": true
+    },
+    {
+      "name": "ad_astra:oil_well",
+      "is_disabled": true
+    },
+    {
+      "name": "ad_astra:pygro_tower",
+      "is_disabled": true
+    },
+    {
+      "name": "ad_astra:pygro_village",
+      "is_disabled": true
+    },
+    {
+      "name": "ad_astra:venus_bullet",
+      "is_disabled": true
+    },
+    {
       "name": "supplementaries:galleon",
       "is_disabled": true
     },
     {
       "name": "supplementaries:road_sign",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:desert_outpost",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:fortified_desert_village",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:fortified_village",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:glacial_hut",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:igloo",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:mage_complex",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:mage_tower",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:mage_tower_autumn",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:mage_tower_spring",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:mage_tower_summer",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:mage_tower_winter",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:rubble_desert",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:rubble_forest",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:rubble_jungle",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:rubble_mesa",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:rubble_mountain",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:rubble_taiga",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:spire",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:underground/frosted_dungeon",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:underground/giant_bee_hive",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:underground/mining_outpost",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:underground/oak_cabin",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:underground/old_refinery",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:underground/sunken_tower",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:underground/witch_hut",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:underground_cabin",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:valley_lodge",
-      "is_disabled": true
-    },
-    {
-      "name": "terralith:witch_hut",
       "is_disabled": true
     }
   ],

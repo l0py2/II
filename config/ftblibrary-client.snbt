@@ -25,8 +25,8 @@
 			}
 			"ftbessentials:trash_can": {
 				enabled: true
-				x: 4
-				y: 1
+				x: 0
+				y: 2
 			}
 			"ftbteams:team_lives": {
 				enabled: true
@@ -45,7 +45,7 @@
 			}
 			"ftblibrary:config": {
 				enabled: true
-				x: 0
+				x: 1
 				y: 2
 			}
 			"ftblibrary:toggle/day": {

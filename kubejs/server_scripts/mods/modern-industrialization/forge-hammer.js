@@ -1,3 +1,4 @@
+/*
 ServerEvents.recipes(event => {
 	function forgeHammer(output, input, damage) {
 		let recipe = {
@@ -47,3 +48,4 @@ ServerEvents.recipes(event => {
 		forgeHammer(`modern_industrialization:${material}_curved_plate`, `#c:ingots/${material}`, 20);
 	});
 });
+*/

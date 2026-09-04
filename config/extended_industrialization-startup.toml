@@ -1,7 +1,5 @@
-#The maximum amount of connections a machine chainer can have
-# Default: 64
-# Range: 1 ~ 128
-machine_chainer_max_connections = 64
+#Whether upgrades should be allowed in the Processing Array
+allow_upgrades_in_processing_array = true
 #The multiplier applied to the transfer rate of machine chainers. The base transfer rate is equal to the max transfer rate of the cable tier of the chainer (as per the hull).
 #Set to 0 for infinite transfer.
 # Default: 3
@@ -15,6 +13,10 @@ machine_chainer_max_transfer_multiplier = 3
 # Default: 4
 # Range: 1 ~ 4
 processing_array_max_size = 4
+#The maximum amount of connections a machine chainer can have
+# Default: 64
+# Range: 1 ~ 128
+machine_chainer_max_connections = 64
 #The maximum amount of random ticks the farmer can do on a crop block in a single use of fertilizer
 # Default: 80
 # Range: 1 ~ 1000
@@ -23,32 +25,8 @@ farmer_fertilizer_max_random_ticks = 80
 # Default: 32
 # Range: > 1
 tesla_coil_range = 32
-#Whether upgrades should be allowed in the Processing Array
-allow_upgrades_in_processing_array = true
-
-[lethal_tesla_coil]
-	#The range for the lethal tesla coil to damage entities within
-	# Default: 2
-	# Range: > 1
-	range = 2
-
-	#The amount of damage dealt by the lethal tesla coil for a cable tier
-	#If no value is specified for a cable tier, the cable tier's EU value is divided by 16 to determine the damage dealt
-	#Range: >= 0.1
-	[lethal_tesla_coil.damage]
-		superconductor = 2.147483647E9
-
-[runtime_generated_recipes]
-	#Whether composter recipes should be generated automatically at runtime or not
-	composter = true
-	#Whether canning machine recipes should be generated automatically at runtime or not
-	canning_machine = true
 
 [batching_machines]
-	#The multiplier to use for the EU cost of the Processing Array
-	# Default: 1.0
-	# Range: 0.1 ~ 1.7976931348623157E308
-	processing_array_eu = 1.0
 	#The maximum batch size to use for the Large Electric Macerator
 	# Default: 16
 	# Range: > 1
@@ -73,3 +51,25 @@ allow_upgrades_in_processing_array = true
 	# Default: 0.75
 	# Range: 0.1 ~ 1.7976931348623157E308
 	large_steam_furnace_eu = 0.75
+	#The multiplier to use for the EU cost of the Processing Array
+	# Default: 1.0
+	# Range: 0.1 ~ 1.7976931348623157E308
+	processing_array_eu = 1.0
+
+[lethal_tesla_coil]
+	#The range for the lethal tesla coil to damage entities within
+	# Default: 2
+	# Range: > 1
+	range = 2
+
+	#The amount of damage dealt by the lethal tesla coil for a cable tier
+	#If no value is specified for a cable tier, the cable tier's EU value is divided by 16 to determine the damage dealt
+	#Range: >= 0.1
+	[lethal_tesla_coil.damage]
+		superconductor = 2.147483647E9
+
+[runtime_generated_recipes]
+	#Whether canning machine recipes should be generated automatically at runtime or not
+	canning_machine = true
+	#Whether composter recipes should be generated automatically at runtime or not
+	composter = true

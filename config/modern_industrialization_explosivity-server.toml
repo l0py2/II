@@ -1,0 +1,25 @@
+[industrialTnt]
+	#Explosion strength. Vanilla TNT has a strength of 4.
+	# Default: 24
+	# Range: 16 ~ 128
+	strength = 24
+
+[nuke]
+	#Destruction radius and strength of a nuclear detonation.
+	# Default: 140
+	# Range: 140 ~ 320
+	strength = 140
+	#Delay between using a linked detonator and detonation, in seconds.
+	# Default: 10
+	# Range: 5 ~ 30
+	countdownSeconds = 10
+	#How long the radiation region remains active, in ticks.
+	# Default: 48000
+	# Range: > 20
+	radiationDurationTicks = 48000
+	#Maximum number of rays used for one nuke. Higher values improve outer blast detail but increase calculation time.
+	# Default: 500000
+	# Range: 100000 ~ 5000000
+	maxRayCount = 500000
+	#Whether mass block removal notifies neighboring blocks. Disabling this reduces update cascades during destruction.
+	updateNeighborsDuringDestruction = false

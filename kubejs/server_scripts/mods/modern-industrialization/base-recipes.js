@@ -1,3 +1,4 @@
+/*
 ServerEvents.recipes(event => {
 	const removedRecipes = [
 		'modern_industrialization:vanilla_recipes/steel_forge_hammer_asbl',
@@ -27,3 +28,4 @@ ServerEvents.recipes(event => {
 		.itemIn('4x #c:ingots/iron')
 		.itemOut('2x modern_industrialization:forge_hammer');
 });
+*/
