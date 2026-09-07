@@ -20,7 +20,7 @@ autocraftingPreviewStyle = "LIST"
 [controller]
 	# Default: 1000
 	# Range: 1 ~ 9223372036854775807
-	energyCapacity = 1000
+	energyCapacity = 1000000
 
 [diskDrive]
 	# Default: 10
@@ -135,13 +135,13 @@ autocraftingPreviewStyle = "LIST"
 	regulatorUpgradeEnergyUsage = 16
 	# Default: 8
 	# Range: 0 ~ 9223372036854775807
-	rangeUpgradeEnergyUsage = 8
+	rangeUpgradeEnergyUsage = 16
 	# Default: 0
 	# Range: 0 ~ 9223372036854775807
 	creativeRangeUpgradeEnergyUsage = 0
 	# Default: 8
 	# Range: > 0
-	rangeUpgradeRange = 8
+	rangeUpgradeRange = 128
 	# Default: 8
 	# Range: 0 ~ 9223372036854775807
 	autocraftingUpgradeUsage = 8
@@ -191,7 +191,7 @@ autocraftingPreviewStyle = "LIST"
 	energyUsage = 16
 	# Default: 16
 	# Range: > 0
-	baseRange = 16
+	baseRange = 128
 
 [storageMonitor]
 	# Default: 4

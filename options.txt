@@ -196,13 +196,13 @@ key_key.jei.closeRecipeGui:key.keyboard.unknown
 key_key.jei.copy.recipe.id:key.keyboard.unknown
 key_key.guideme.guide:key.keyboard.g
 key_key.kubejs.kubedex:key.keyboard.unknown
-key_key.modern_industrialization.toggle_flight:key.keyboard.v
 key_key.modern_industrialization.toggle_3x3:key.keyboard.y
+key_key.modern_industrialization.toggle_flight:key.keyboard.v
+key_key.extended_industrialization.toggle_helmet_ability:key.keyboard.unknown
 key_key.extended_industrialization.toggle_main_hand_ability:key.keyboard.unknown
 key_key.extended_industrialization.toggle_leggings_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_boots_ability:key.keyboard.unknown
 key_key.extended_industrialization.toggle_chestplate_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_helmet_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_boots_ability:key.keyboard.unknown
 key_key.yet_another_industrialization.toggle_industrialists_goggles:key.keyboard.unknown
 key_key.industrialization_overdrive.terminal_mode_switch:key.keyboard.v
 key_key.ftbquests.quests:key.keyboard.f4

@@ -42,15 +42,5 @@
 			x: 1.5d
 			y: 1.5d
 		}
-		{
-			id: "3A24643B650998AB"
-			tasks: [{
-				id: "1538B2DA0C573744"
-				item: { count: 1, id: "chisel:chisel" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 0.0d
-		}
 	]
 }
