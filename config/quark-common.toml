@@ -34,7 +34,7 @@
 
 [categories]
 	automation = true
-	building = false
+	building = true
 	management = true
 	tools = true
 	tweaks = true
@@ -98,7 +98,7 @@
 	"Compressed Blocks" = false
 	"Duskbound Blocks" = false
 	"Framed Glass" = false
-	"Glass Item Frame" = false
+	"Glass Item Frame" = true
 	"Gold Bars" = false
 	Grate = false
 	Hedges = false
