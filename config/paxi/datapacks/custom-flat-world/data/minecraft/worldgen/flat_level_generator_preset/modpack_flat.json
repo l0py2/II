@@ -1,0 +1,26 @@
+{
+	"display": "minecraft:white_concrete",
+	"settings": {
+		"biome": "minecraft:plains",
+		"features": true,
+		"lakes": true,
+		"layers": [
+			{
+				"block": "minecraft:bedrock",
+				"height": 1
+			},
+			{
+				"block": "minecraft:stone",
+				"height": 58
+			},
+			{
+				"block": "minecraft:dirt",
+				"height": 4
+			},
+			{
+				"block": "minecraft:grass_block",
+				"height": 1
+			}
+		]
+	}
+}

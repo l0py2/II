@@ -38,7 +38,7 @@
 	management = true
 	tools = true
 	tweaks = true
-	world = false
+	world = true
 	mobs = false
 	client = true
 	experimental = false
@@ -776,7 +776,7 @@
 	"Monster Box" = false
 	"Nether Obsidian Spikes" = false
 	"New Stone Types" = false
-	"No More Lava Pockets" = false
+	"No More Lava Pockets" = true
 	Permafrost = false
 	"Spiral Spires" = false
 
