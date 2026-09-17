@@ -1,0 +1,7 @@
+{
+    "name": "II",
+    "version": "0.0.1",
+    "overrides": [
+        "config"
+    ]
+}
