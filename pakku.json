@@ -2,6 +2,12 @@
     "name": "II",
     "version": "0.0.1",
     "overrides": [
-        "config"
+        "config",
+        "defaultconfigs",
+        "kubejs/data",
+        "kubejs/assets",
+        "kubejs/startup_scripts",
+        "kubejs/server_scripts",
+        "kubejs/client_scripts"
     ]
 }
