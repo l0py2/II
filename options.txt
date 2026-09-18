@@ -71,7 +71,7 @@ notificationDisplayTime:1.0
 useNativeTransport:true
 mainHand:"right"
 attackIndicator:1
-tutorialStep:movement
+tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
@@ -144,6 +144,9 @@ key_simulated.keyinfo.scroll_up:key.keyboard.unknown
 key_simulated.keyinfo.scroll_down:key.keyboard.unknown
 key_key.exposure.camera_controls:key.keyboard.unknown
 key_key.corpse.death_history:key.keyboard.u
+key_key.immersiveengineering.magnetEquip:key.keyboard.s
+key_key.immersiveengineering.railgunZoom:key.mouse.middle
+key_key.immersiveengineering.chemthrowerSwitch:key.keyboard.unknown
 key_key.jade.config:key.keyboard.keypad.0
 key_key.jade.show_overlay:key.keyboard.keypad.1
 key_key.jade.toggle_liquid:key.keyboard.keypad.2
